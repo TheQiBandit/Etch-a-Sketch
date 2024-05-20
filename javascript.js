@@ -16,10 +16,18 @@ function generateGrid() {
         tempElem.appendChild(divElem);
     };
 
-    container.appendChild(tempElem);
+    container.appendChild(tempElem); 
     
 };
 
 generateGrid();
+
+container.addEventListener("click", function(e) {
+    if (e.target.classList.contains('sbox')) {
+        alert("Voila!")
+    }
+});
+
+
 
 
