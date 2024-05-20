@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 750px;
+    width: 750px;
+    gap: 5px;
+}
+
+.sbox {
+    margin: 0px;
+    border: 0px;
+    height: 50px;
+    width: 50px;
+    background-color: bisque;
+}
