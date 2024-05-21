@@ -1,17 +1,14 @@
-let main = document.querySelector("body");
-main.style.backgroundColor = "black";
 
 let container = document.querySelector(".container");
-let sketchPad = document.createElement("div");
 
-function generateGrid() {
+function generateGrid(e = 256) {
     let tempElem = new DocumentFragment();
-    let gridNum = 256;
+    let gridNum = e;
     
     for (let i = 0; i < gridNum; i++) {
         
         let divElem = document.createElement("div");
-        divElem.classList.add("sbox");
+        divElem.classList.add("box");
 
         tempElem.appendChild(divElem);
     };
@@ -22,9 +19,9 @@ function generateGrid() {
 
 generateGrid();
 
-container.addEventListener("click", function(e) {
-    if (e.target.classList.contains('sbox')) {
-        alert("Voila!")
+container.addEventListener("mouseover", event => {
+    if (event.target.classList.contains('box')) {
+        event.target.style.backgroundColor = "red";
     }
 });
 
