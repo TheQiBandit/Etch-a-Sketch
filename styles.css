@@ -13,23 +13,12 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 475px;
-    width: 475px;
-    gap: 5px;
+    height: 760px;
+    width: 760px;
 }
 
 .box {
     margin: 0px;
     border: 0px;
-    height: 25px;
-    width: 25px;
     background-color: bisque;
-}
-
-.etching {
-    margin: 0px;
-    border: 0px;
-    height: 25px;
-    width: 25px;
-    background-color: red;
 }

@@ -1,7 +1,7 @@
 
 let container = document.querySelector(".container");
 
-function generateGrid(e = 16) {
+function generateGrid(e = 10) {
     let tempElem = new DocumentFragment();
     let gridNum = e * e;
     
@@ -9,6 +9,10 @@ function generateGrid(e = 16) {
         
         let divElem = document.createElement("div");
         divElem.classList.add("box");
+        const boxDimensions = `${760 / e}px`;
+        divElem.style.setProperty("width", boxDimensions);
+        divElem.style.setProperty("height", boxDimensions);
+        
 
         tempElem.appendChild(divElem);
     };
@@ -17,8 +21,9 @@ function generateGrid(e = 16) {
     
 };
 
-let userGrid = generateGrid(parseInt(prompt("Enter a number from 1-100")))
-generateGrid();
+generateGrid(100);
+//let userGrid = generateGrid(parseInt(prompt("Enter a number from 1-100")))
+
 
 function randomizeNum(num) {
     return Math.floor(Math.random() * num); 
