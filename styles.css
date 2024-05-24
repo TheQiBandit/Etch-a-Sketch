@@ -1,8 +1,15 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
+    gap: 20px;
+    padding: 20px;
+}
+.content {
+    display: flex;
+    gap: 25px;
 }
 
 h1 {
