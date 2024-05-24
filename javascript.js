@@ -23,7 +23,7 @@ function generateGrid(e = 16) {
    
 };
 
-generateGrid(64);
+generateGrid();
 
 container.addEventListener("mouseover", event => {
     if (event.target.classList.contains('box')) {
